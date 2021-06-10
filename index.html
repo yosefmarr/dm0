@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <marquee direction="right" id="secret" class="my-secret" loop>
+            <div><h1>This is a secret message...</h1></div>
+        </marquee>
+        <button id="btnShowSecret" onclick="showSecret()">Show secret</button>
+    </body>
+    <script>
+        function showSecret()
+        {
+            let secretMessage = document.querySelector('#secret');
+            let showSecretButton = document.querySelector('#btnShowSecret');
+            secretMessage.style.opacity = 1;
+            showSecretButton.disabled = 'disabled';
+        }
+    </script>
+</html>
